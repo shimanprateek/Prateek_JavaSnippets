@@ -11,6 +11,7 @@ public class Addition {
 			System.out.println("Addition Result : " + c);
 			
 			System.out.println("Grid Change");
+			System.out.println("First Grid Change");
 	}
 
 }
