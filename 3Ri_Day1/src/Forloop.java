@@ -14,6 +14,7 @@ public class Forloop {
 		}
 	    
 	    System.out.println("Factorial value till digit "+ factorial +" -->" + j);
+	    System.out.println("Factorial value till digit "+ factorial +" -->" + j);
 	}
 
 }
