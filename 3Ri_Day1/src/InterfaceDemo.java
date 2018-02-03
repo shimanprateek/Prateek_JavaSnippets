@@ -4,6 +4,7 @@ public class InterfaceDemo extends K implements I1,I2{
 public void add()
 	{
 	 
+		System.out.println("Interface Demo implementing I1");
 		System.out.println(i + j);
 		
 	}
