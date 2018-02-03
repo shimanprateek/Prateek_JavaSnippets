@@ -12,4 +12,10 @@ public class K implements I1,I2 {
 		System.out.println(i - j);
 		
 	}
+	
+	public void mul()
+	{
+		System.out.println(i * j);
+		
+	}
 }
