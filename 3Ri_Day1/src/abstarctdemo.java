@@ -2,7 +2,7 @@
 abstract class a
 {
 	abstract void display();
-	void display1()
+	 void display1()
 	{
 		System.out.println("A1");
 	}
@@ -32,6 +32,7 @@ public class abstarctdemo {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
+		
 		a a1 = new B();
 		a1.display1();
 		a1.display();

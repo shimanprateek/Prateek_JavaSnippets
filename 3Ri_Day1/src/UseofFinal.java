@@ -1,6 +1,7 @@
   class x
 {
 	 final int a = 10;
+	 
 	 void change()
 	{
 	
@@ -21,6 +22,7 @@
 
   class y extends x
 {
+	  int a =50;
 	void change()
 	{
 	
@@ -48,6 +50,6 @@ public class UseofFinal {
 		a.change1();
 		y b = new y(); 
 		b.change2();
-	}
+		}
 
 }

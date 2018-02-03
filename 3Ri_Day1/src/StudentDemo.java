@@ -25,8 +25,11 @@ class Students{
 	
 	static void getschoolname(String s)       // static method cannot access non static variables ,only static variables can be used.
 	{
+		
 		SchoolName = s;
 	}
+	
+	
 }
 
 
@@ -42,6 +45,7 @@ public class StudentDemo {
 		s1.getdetails(187972, "Prateek", 28,400);
 		s2.getdetails(187973, "Jamal", 27,800); 
 		s1.display();
+		//Students.getschoolname("Amravati");
 		s2.display();
 		if (s1.marks >= s2.marks)
 		{
