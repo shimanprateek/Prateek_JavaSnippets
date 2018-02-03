@@ -2,7 +2,7 @@
 public class StringLearn {
 
 //	String s1 = new String("Prateek");
-String s1= "Pratek";
+String s1= "Prateek";
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		StringLearn s = new  StringLearn();
@@ -10,7 +10,7 @@ String s1= "Pratek";
 		char a = s.s1.charAt(5);
 		System.out.println(a);
 		
-		int b = s.s1.indexOf('P');
+		int b = s.s1.indexOf('e');
 		System.out.println(b);
 		
 		int c = s.s1.length();
@@ -46,7 +46,21 @@ String s1= "Pratek";
 		
 		String l = s.s1.replaceAll("Pratek", "Jamal");
 		System.out.println(l);
+		System.out.println(s.s1.lastIndexOf('e'));
+		//6System.out.println(s.s1.re(s.s1.charAt(5), 'E'));
 		
+		char [] w = s.s1.toCharArray();
+		w[5] = '$';
+		System.out.println(w.length);
+		s.s1 = String.valueOf(w);
+		
+		System.out.println(s.s1);
+		
+		StringBuilder str = new StringBuilder(s.s1);
+		str.setCharAt(5,'^');
+		System.out.println(str);
+		
+	    
 		
 	}
 }
