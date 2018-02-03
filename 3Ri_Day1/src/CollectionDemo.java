@@ -17,7 +17,6 @@ public class CollectionDemo {
 		//al.add(arg0, arg1);
 		//boolean bool = al.contains(2);
 		//int bool = al.indexOf(4);
-		
 		System.out.println("----ArrayList---");
 		for(int n : al)
 		{
@@ -78,6 +77,8 @@ public class CollectionDemo {
 			
 			System.out.println(x);
 		}
+		
+		
 		
 	}
 
