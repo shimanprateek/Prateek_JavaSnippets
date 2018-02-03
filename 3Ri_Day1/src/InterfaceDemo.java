@@ -15,7 +15,8 @@ public void add()
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		I1 w = new K();
+		
+		I1 w = new InterfaceDemo();
 		w.add();
 		K c1 = new K();
 		c1.add();
