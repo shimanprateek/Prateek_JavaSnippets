@@ -40,8 +40,10 @@ public class collectionLearnrecent {
 	    al.add(b2);  
 	    al.add(b1);  
 	    al.add(b3);  
-	    System.out.println("------------------BeforeReversal----------------");
+	    System.out.println("------------------BeforeReversalForeachloop----------------");
 	    System.out.println(al);
+	    al.forEach(b ->{System.out.println(b.id+" "+b.name+" "+b.author+" "+b.publisher+" "+b.quantity);   });
+	    System.out.println("------------------BeforeReversalFoa Advance loop----------------");
 	    for(Book1 b : al)
 	    {
 	    	System.out.println(b.id+" "+b.name+" "+b.author+" "+b.publisher+" "+b.quantity);  

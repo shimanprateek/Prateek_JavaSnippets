@@ -15,7 +15,7 @@ public class UseProperty {
 		p.store(new FileWriter("info.properties"),"Javatpoint Properties Example");  
 		
 		p.load(new FileReader("info.properties"));
-		
+		System.out.println(p.getProperty("name").toString());
 		for (Map.Entry entry : p.entrySet())
 		{
 			System.out.println(entry.getKey() + "=" + entry.getValue());
