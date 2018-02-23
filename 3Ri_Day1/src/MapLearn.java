@@ -1,7 +1,10 @@
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.Map;
 import java.util.Map.Entry;
 import java.util.NavigableMap;
+import java.util.Set;
 import java.util.TreeMap;
 
 class Book3 {    
@@ -52,7 +55,27 @@ public class MapLearn {
 	    	System.out.println(b.id+" "+b.name+" "+b.author+" "+b.publisher+" "+b.quantity);   
 	    }
 	    
+	    Set <Entry<Integer,Book3>> set = map.entrySet();
+	    ArrayList <Entry<Integer,Book3>> list = new ArrayList <Entry<Integer,Book3>>(set);
 	    
+	    Collections.sort(list, new Comparator<Map.Entry<Integer,Book3>>(){
+
+			@Override
+			public int compare(Entry<Integer, Book3> o1, Entry<Integer, Book3> o2) {
+				// TODO Auto-generated method stub
+				
+				return 	o1.getValue().quantity - o2.getValue().quantity;
+			
+			}
+
+	    	
+	    });
+	  System.out.println("-----------After Sorting---------");
+	   for(Entry<Integer,Book3> entry : list)
+	   {
+		   Book3 b = entry.getValue();
+		   System.out.println(b.id+" "+b.name+" "+b.author+" "+b.publisher+" "+b.quantity); 
+	   }
 	}
 
 }
