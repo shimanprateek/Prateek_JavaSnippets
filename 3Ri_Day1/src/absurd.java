@@ -8,6 +8,7 @@ public class absurd {
 		{
 			  System.out.println(i);
 			  i++;
+			  
 		}while(i>10);		
 	}
 
