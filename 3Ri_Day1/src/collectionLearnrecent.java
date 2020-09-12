@@ -13,6 +13,7 @@ public Book1(int id, String name, String author, String publisher, int quantity)
     this.publisher = publisher;    
     this.quantity = quantity;    
 }
+
 @Override
 public int compareTo(Book1 o) {
 	// TODO Auto-generated method stub
