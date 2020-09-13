@@ -1,7 +1,10 @@
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.HashSet;
 import java.util.LinkedHashSet;
 import java.util.LinkedList;
+import java.util.List;
+import java.util.Set;
 import java.util.TreeSet;
 
 public class CollectionDemo {
@@ -73,13 +76,23 @@ public class CollectionDemo {
 		ts.add(2);
 		System.out.println("----TreeSet---");
 		for (Integer x : ts)
-		{
-			
+		{	
 			System.out.println(x);
 		}
 		
 		
+		Set<String> s = new HashSet();
 		
+		String [] names ={"Rosy","Fauji","Prateek","Rosy"};
+		List<String> ls = Arrays.asList(names);
+		for(String name : names )
+		{
+			if(s.add(name) == false)
+			{
+				System.out.println("Duplicate Found : " + name);
+			}
+		}
+		System.out.println(s);
 	}
 
 }
