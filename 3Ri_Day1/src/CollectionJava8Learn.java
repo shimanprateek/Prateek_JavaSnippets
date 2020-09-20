@@ -92,8 +92,9 @@ public class CollectionJava8Learn {
 			System.out.println(ls);
 			
 /*			Represents a predicate (boolean-valued function) of one argument.
-
+            This is a functional interface and can therefore be used as the assignment target for a lambda expression or method reference.
 			This is a functional interface whose functional method is test(Object).*/
+			
 			System.out.println("=====================================Predicate-Interface===================================================");
 			Predicate<Integer> ps = x -> x>5;
 			
