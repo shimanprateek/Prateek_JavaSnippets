@@ -77,5 +77,5 @@ public class Collectionstreamjava8learn {
 				Integer totalquantity1 =     list.stream().map(x -> x.getQuantity()).reduce((int )0.00,Integer::sum);
 				System.out.println("totalquantity of books by reduction : " + totalquantity1);
 	}
-
+	
 }
