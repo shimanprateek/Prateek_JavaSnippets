@@ -71,7 +71,7 @@ public class collectionLearnrecent1 {
 	    Book2 b1=new Book2(101,"Let us C","Yashwant Kanetkar","BPB",8);    
 	    Book2 b2=new Book2(102,"Data Communications & Networking","Forouzan","Mc Graw Hill",4);    
 	    Book2 b3=new Book2(103,"Operating System","Galvin","Wiley",6); 
-	    Book2 b4=new Book2(104,"Operations","Gallelio","Chutiya",25);
+	    Book2 b4=new Book2(104,"Operations","Gallelio","Dahiya",25);
 	    
 	    al.add(b2);  
 	    al.add(b1);  
