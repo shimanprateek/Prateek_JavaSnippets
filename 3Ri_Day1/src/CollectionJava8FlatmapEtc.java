@@ -2,6 +2,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
+import java.util.stream.IntStream;
 import java.util.stream.Stream;
 
 import FunctionalInterfaceUse.MobileBrand;
@@ -72,7 +73,13 @@ public class CollectionJava8FlatmapEtc {
 		List<String> devices_details = mobiles.stream().map(x -> x.getDevices()).flatMap(x -> x.stream()).distinct().collect(Collectors.toList());
 		
 		System.out.println("Flattened Device details : " + devices_details);
-		//Example3
 		
+		//Example3
+		int tablefor = 5;
+		int [] arr = {1,2,3,4,5,6,7,8,9,10};
+		Stream<int []> str = Stream.of(arr);
+		
+		  IntStream flatten = str.flatMapToInt(x -> Arrays.stream(x)).map(x -> x*tablefor);
+		  flatten.forEach(System.out::println);
 	}
 }
