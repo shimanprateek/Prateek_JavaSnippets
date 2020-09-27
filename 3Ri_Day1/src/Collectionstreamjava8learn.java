@@ -76,6 +76,11 @@ public class Collectionstreamjava8learn {
 		//Optional<Integer> totalquantity1 =     list.stream().map(x -> x.getQuantity()).reduce((x,y) -> x+y);
 				Integer totalquantity1 =     list.stream().map(x -> x.getQuantity()).reduce((int )0.00,Integer::sum);
 				System.out.println("totalquantity of books by reduction : " + totalquantity1);
+				
+		//total price by sum method
+		//Optional<Integer> totalquantity1 =     list.stream().map(x -> x.getQuantity()).reduce((x,y) -> x+y);
+				Integer totalquantity3 =     list.stream().mapToInt(x -> x.getQuantity()).sum();
+				System.out.println("totalquantity of books by MapperInt : " + totalquantity3);
 	}
 	
 }
