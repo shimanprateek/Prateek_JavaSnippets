@@ -68,7 +68,7 @@ public class CollectionJava8Streamapproaches {
 		  //Arrays.stream(newstate,2,6).forEach(System.out::println);
 		  
 		  List<Character> listArray = new ArrayList<>();
-		  for (char c : newstate)
+		  for (char c : newstate) 
 		      listArray.add(c);
 		  Stream<Character> cStream = listArray.stream();
 		 System.out.println("Method1 :");
