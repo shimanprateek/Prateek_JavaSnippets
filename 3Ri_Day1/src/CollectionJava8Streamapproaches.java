@@ -1,7 +1,12 @@
+import java.nio.CharBuffer;
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 import java.util.stream.IntStream;
 import java.util.stream.LongStream;
 import java.util.stream.Stream;
+
+import javax.xml.stream.events.Characters;
 
 import org.omg.CORBA.portable.Streamable;
 
@@ -49,6 +54,27 @@ public class CollectionJava8Streamapproaches {
 		   
 		 long value = LongStream.rangeClosed(1, 5).reduce(1,(a,b) -> a*b);
 		 System.out.print(value);
+		 
+		 //9.String to charArray
+		 
+		 System.out.print("===========================");
+		 
+		  String valuetoconvert = "My name is Prateek";
+		  char[] newstate = valuetoconvert.toCharArray();
+		 // Stream.of(newstate).findFirst().ifPresent(System.out::println);
+		  System.out.println("Method2 :");
+		  valuetoconvert.chars().mapToObj(x -> (char)x).forEach(System.out::println);
+		  
+		  //Arrays.stream(newstate,2,6).forEach(System.out::println);
+		  
+		  List<Character> listArray = new ArrayList<>();
+		  for (char c : newstate)
+		      listArray.add(c);
+		  Stream<Character> cStream = listArray.stream();
+		 System.out.println("Method1 :");
+		  cStream.forEach(System.out::println);
+		  //Stream<Object> newstream = CharBuffer.wrap(valuetoconvert).chars().mapToObj(ch -> (char)ch);
+		  
 		 
 	}
 
